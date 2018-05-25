@@ -8,7 +8,9 @@ const FIXTURE = path.join(__dirname, 'fixture.js');
 
 async function run(env) {
   let res = await spawn('node', [FIXTURE], {
-    env: Object.assign({}, process.env, env),
+    env: Object.assign({}, {
+      PATH: process.env.PATH,
+    }, env),
   });
   return JSON.parse(res.stdout.toString());
 }
