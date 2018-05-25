@@ -21,10 +21,10 @@ console.log(ciParallelVars); // { index: 3, total: 10 } || null
 > If you want to add support for another pair, please open a pull request and
 > add them to `index.js` and to this list.
 
-- [Knapsack] / [TravisCI]: `CI_NODE_INDEX`/`CI_NODE_TOTAL`
-- [CircleCI]: `CIRCLE_NODE_INDEX`/`CIRCLE_NODE_TOTAL`
-- [Bitbucket Pipelines]: `BITBUCKET_PARALLEL_STEP`/`BITBUCKET_PARALLEL_STEP_COUNT`',
-- [Buildkite]: `BUILDKITE_PARALLEL_JOB`/`BUILDKITE_PARALLEL_JOB_COUNT`
+- [Knapsack] / [TravisCI] - `CI_NODE_INDEX`/`CI_NODE_TOTAL`
+- [CircleCI] - `CIRCLE_NODE_INDEX`/`CIRCLE_NODE_TOTAL`
+- [Bitbucket Pipelines] - `BITBUCKET_PARALLEL_STEP`/`BITBUCKET_PARALLEL_STEP_COUNT`',
+- [Buildkite] - `BUILDKITE_PARALLEL_JOB`/`BUILDKITE_PARALLEL_JOB_COUNT`
 
 One of these pairs must both be defined as numbers or `ci-parallel-vars` will
 be `null`.
