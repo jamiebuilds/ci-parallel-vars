@@ -26,6 +26,11 @@ const envs = [
     index: 'BUILDKITE_PARALLEL_JOB',
     total: 'BUILDKITE_PARALLEL_JOB_COUNT',
   },
+  // Semaphore
+  {
+    index: 'SEMAPHORE_CURRENT_JOB',
+    total: 'SEMAPHORE_JOB_COUNT',
+  },
 ];
 
 let maybeNum = val => {
