@@ -1,6 +1,6 @@
 # ci-parallel-vars
 
-> Get CI environment variables for parallelizing builds
+> Get CI environment variables for parallelizing builds!
 
 ## Install
 
