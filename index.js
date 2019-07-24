@@ -6,7 +6,7 @@ type Match = null | { index: number, total: number };
 */
 
 const envs = [
-  // Knapsack / TravisCI
+  // Knapsack / TravisCI / GitLab
   {
     index: 'CI_NODE_INDEX',
     total: 'CI_NODE_TOTAL',
