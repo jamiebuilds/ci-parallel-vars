@@ -45,6 +45,9 @@ for (let env of envs) {
   let total = maybeNum(process.env[env.total]);
 
   if (index !== null && total !== null) {
+    if (process.env.GITLAB_CI) {
+      index = index - 1;
+    }
     match = { index, total };
     break;
   }
